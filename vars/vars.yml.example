@@ -1,0 +1,2 @@
+remote_user: user
+ansible_sudo_pass: pass
