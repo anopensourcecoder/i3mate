@@ -6,7 +6,7 @@ galaxy_info:
   author: an opensource coder
   description: Ansible role to install i3
   license: GPL3
-  min_ansible_version: 1.0
+  min_ansible_version: 2.5
   platforms:
     - name: Ubuntu
       versions:

@@ -1,7 +1,7 @@
 ---
 # Install i3-wm
 
-- name: Ensure i3 is installed
-  apt: pkg={{item}} update_cache=true force=yes state=installed
+- name: Ensure i3 is present
+  apt: pkg={{item}} update_cache=true force=yes state=present
   with_items:
     - i3-wm
