@@ -5,3 +5,8 @@
   apt: pkg={{item}} update_cache=true force=yes state=present
   with_items:
     - i3-wm
+    - dunst
+    - i3lock
+    - i3status
+    - libxdg-basedir1
+    - suckless-tools
