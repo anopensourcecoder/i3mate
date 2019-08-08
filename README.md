@@ -16,6 +16,10 @@ This Ansible role installs the following components:
   * Install vmware-tools if you are using VMware ( Skip on real machine )
   * Login and Disable automatic updates ( To avoid update nag inside vm)
   * Set the the main repo to nearby ( Helps with faster update)
+  * Update ubuntu
+    ```
+    sudo apt update && apt upgarde
+    ```
   * Open terminal and run
     ```
     sudo apt install git
