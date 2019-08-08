@@ -2,3 +2,4 @@ diff
 vars/vars.yml
 .vagrant/
 vagrant.retry
+.vscode/
