@@ -35,6 +35,14 @@
   with_fileglob:
    - bin/*
 
+- name: add bin to path
+  lineinfile:
+    dest: /home/{{remote_user}}/.bash_aliases
+    state: present
+    backrefs: yes
+    regexp: 'PATH=(["]*)((?!.*?{{bin}}).*?)(["]*)$'
+    line: "PATH=\1\2:{{bin}}\3"
+
 
 
 
