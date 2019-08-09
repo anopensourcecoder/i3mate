@@ -24,6 +24,18 @@
    - i3/*
 
 
+- name: Ensure bin directory
+  file: path=/home/{{remote_user}}/bin state=directory
+
+- name: Set permissions for bin directory
+  file: path=/home/{{remote_user}}/bin recurse='yes' owner={{remote_user}} group={{remote_user}} mode='u=rwX'
+
+- name: Add useful scripts at bin
+  copy: src={{item}} dest=/home/{{remote_user}}/bin owner={{remote_user}} group={{remote_user}} mode='u=rwx'
+  with_fileglob:
+   - bin/*
+
+
 
 
 
